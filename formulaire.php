@@ -8,6 +8,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="stylesheet" href="sources/css/categorie.css">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
