@@ -11,6 +11,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <!doctype html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
     <title>Nos Catégories</title>
     <meta charset="utf-8" />
@@ -33,6 +34,17 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
         <button type="submit" class="btn btn-secondary">Enregistrer</button>
     </form>
+=======
+    <head>
+        <title>Créer une catégorie</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="sources/css/categorie.css">
+>>>>>>> 1a63032d49802d99545b9002815704bb290356af
 
     <table class="table table-striped">
         <thead>
