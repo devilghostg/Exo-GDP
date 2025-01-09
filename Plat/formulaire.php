@@ -8,7 +8,6 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="stylesheet" href="sources/css/categorie.css">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -22,15 +21,35 @@
     <body>
 
         <header>
-            <?php require_once 'header.php'; ?>
+            <?php require_once '../header.php'; ?>
         </header>
         <main>
-          <h1>Nos catégories</h1>
-          <form action="ajout_categorie.php" method="POST">
-          <p>Entrer un nom</p>
-          <input type="text" name="nom_categorie" required>
-          <button type="submit" class="btn btn-secondary">Enregistrer</button>
-          </form>
+          <h1>Nos plats</h1>
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ajouter</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ajouter un plat</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="">
+                        <h2>Entrer un nom</h2>
+                        <input type="text"> 
+                        <h2>Selectionner une categorie</h2>
+                        <select name=""
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary">Confirmer</button>
+                </div>
+                </div>
+            </div>
+            </div>
 
         <table>
         <thead>
@@ -48,7 +67,7 @@
                 Modifier
                 </button>
 
-                <!-- MODAL -->
+                
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">

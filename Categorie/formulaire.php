@@ -8,7 +8,6 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="stylesheet" href="sources/css/categorie.css">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -25,12 +24,10 @@
             <?php require_once 'header.php'; ?>
         </header>
         <main>
-          <h1>Nos catégories</h1>
-          <form action="ajout_categorie.php" method="POST">
+          <h1>Nos catégorie</h1>
           <p>Entrer un nom</p>
-          <input type="text" name="nom_categorie" required>
-          <button type="submit" class="btn btn-secondary">Enregistrer</button>
-          </form>
+          <input type="text">
+          <button type="button" class="btn btn-secondary">Enregistrer</button>
 
         <table>
         <thead>
@@ -48,7 +45,7 @@
                 Modifier
                 </button>
 
-                <!-- MODAL -->
+                
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -57,7 +54,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <input type="text"> 
+                        <input type="text"> <button type="button" class="btn btn-primary" id =""> Modifier</button>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
