@@ -26,6 +26,7 @@ SET time_zone = "+00:00";
 --
 -- Structure de la table `categorie`
 --
+CREATE DATABASE gdp;
 
 DROP TABLE IF EXISTS `categorie`;
 CREATE TABLE IF NOT EXISTS `categorie` (
