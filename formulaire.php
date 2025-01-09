@@ -8,6 +8,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="stylesheet" href="sources/css/categorie.css">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -24,34 +25,52 @@
             <?php require_once 'header.php'; ?>
         </header>
         <main>
-          <h1>Nos catégorie</h1>
-          <p>Entrer un nom</p>
-          <input type="text">
-          <input type="button" value="Supprimer">
+          <h1>Nos catégories</h1>
+          <form action="ajout_categorie.php" method="POST">
+            <p>Entrer un nom</p>
+            <input type="text">
+            <button type="button" class="btn btn-secondary">Enregistrer</button>
+          </form>
 
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Modifier
-            </button>
+        <table>
+        <thead>
+            <tr>
+            <th>Nom</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>test</td>
+              <!--  modification d'une categorie -->
+            <td>    
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Modifier
+                </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modifier une catégorie</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modifier une catégorie</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text"> <button type="button" class="btn btn-primary" id =""> Modifier</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Confirmer</button>
+                    </div>
+                    </div>
                 </div>
-              </div>
-            </div>
+                </div>
+                <button type="button" class="btn btn-secondary">Supprimer</button>
+            </td>
+            
+            </tr>
+        </table>
         </main>
         <footer>
             <!-- place footer here -->
