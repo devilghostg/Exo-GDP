@@ -24,10 +24,12 @@
             <?php require_once 'header.php'; ?>
         </header>
         <main>
-          <h1>Nos catégorie</h1>
+          <h1>Nos catégories</h1>
+          <form action="ajout_categorie.php" method="POST">
           <p>Entrer un nom</p>
           <input type="text">
           <button type="button" class="btn btn-secondary">Enregistrer</button>
+          </form>
 
         <table>
         <thead>
