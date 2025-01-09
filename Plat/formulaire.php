@@ -37,10 +37,14 @@
 
                 <div class="modal-body">
                     <form action="">
-                        <h2>Entrer un nom</h2>
+                        <h4>Entrer un nom</h4>
                         <input type="text"> 
-                        <h2>Selectionner une categorie</h2>
-                        <select name=""
+                        <h4>Selectionner une categorie</h4>
+                        <label for="cars">Choisissez une categorie:</label>
+                        <select name="cars" id="cars">
+                            <option value="test">test</option>
+
+                        </select>
                     </form>
                 </div>
                 <div class="modal-footer">
