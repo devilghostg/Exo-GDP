@@ -8,6 +8,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="stylesheet" href="sources/css/categorie.css">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -26,9 +27,9 @@
         <main>
           <h1>Nos catégories</h1>
           <form action="ajout_categorie.php" method="POST">
-          <p>Entrer un nom</p>
-          <input type="text">
-          <button type="button" class="btn btn-secondary">Enregistrer</button>
+            <p>Entrer un nom</p>
+            <input type="text">
+            <button type="button" class="btn btn-secondary">Enregistrer</button>
           </form>
 
         <table>
