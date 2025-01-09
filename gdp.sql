@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 09 jan. 2025 à 09:19
+-- Généré le : jeu. 09 jan. 2025 à 09:40
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.2.0
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `gdp`
 --
+CREATE DATABASE IF NOT EXISTS `gdp` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE `gdp`;
 
 -- --------------------------------------------------------
 
@@ -32,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `categorie` (
   `id` smallint NOT NULL AUTO_INCREMENT,
   `nom` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
-);
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -47,7 +49,7 @@ CREATE TABLE IF NOT EXISTS `plat` (
   `description` text NOT NULL,
   `prix` decimal(10,0) NOT NULL,
   PRIMARY KEY (`id`)
-);
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
